@@ -1,0 +1,1161 @@
+   Compiling autocfg v1.1.0
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.137
+   Compiling proc-macro2 v1.0.47
+   Compiling quote v1.0.21
+   Compiling unicode-ident v1.0.5
+   Compiling syn v1.0.103
+   Compiling crossbeam-utils v0.8.14
+   Compiling serde_derive v1.0.147
+   Compiling serde v1.0.147
+   Compiling typenum v1.15.0
+   Compiling version_check v0.9.4
+   Compiling platforms v3.0.2
+   Compiling scopeguard v1.1.0
+   Compiling either v1.8.0
+   Compiling rayon-core v1.10.1
+   Compiling serde_json v1.0.89
+   Compiling ciborium-io v0.2.0
+   Compiling plotters-backend v0.3.4
+   Compiling half v1.8.2
+   Compiling hashbrown v0.12.3
+   Compiling ryu v1.0.11
+   Compiling generic-array v0.14.6
+   Compiling os_str_bytes v6.4.1
+   Compiling itoa v1.0.4
+   Compiling memoffset v0.7.1
+   Compiling crossbeam-epoch v0.9.13
+   Compiling indexmap v1.9.2
+   Compiling num-traits v0.2.15
+   Compiling curve25519-dalek v4.0.0-pre.3 (/home/foobar/cc/curve25519-dalek)
+   Compiling ciborium-ll v0.2.0
+   Compiling clap_lex v0.2.4
+   Compiling plotters-svg v0.3.3
+   Compiling itertools v0.10.5
+   Compiling same-file v1.0.6
+   Compiling crossbeam-channel v0.5.6
+   Compiling regex-syntax v0.6.28
+   Compiling cast v0.3.0
+   Compiling textwrap v0.16.0
+   Compiling ppv-lite86 v0.2.17
+   Compiling bitflags v1.3.2
+   Compiling getrandom v0.2.8
+   Compiling rand_core v0.6.4
+   Compiling crossbeam-deque v0.8.2
+   Compiling num_cpus v1.14.0
+   Compiling clap v3.2.23
+   Compiling atty v0.2.14
+   Compiling walkdir v2.3.2
+   Compiling fiat-crypto v0.1.17
+   Compiling rand_chacha v0.3.1
+   Compiling oorandom v11.1.3
+   Compiling zeroize v1.5.7
+   Compiling lazy_static v1.4.0
+   Compiling anes v0.1.6
+   Compiling cpufeatures v0.2.5
+   Compiling subtle v2.4.1
+   Compiling rand v0.8.5
+   Compiling regex v1.7.0
+   Compiling rayon v1.6.0
+   Compiling hex v0.4.3
+   Compiling block-buffer v0.10.3
+   Compiling crypto-common v0.1.6
+   Compiling plotters v0.3.4
+   Compiling digest v0.10.6
+   Compiling criterion-plot v0.5.0
+   Compiling sha2 v0.10.6
+   Compiling ciborium v0.2.0
+   Compiling bincode v1.3.3
+   Compiling tinytemplate v1.2.1
+   Compiling criterion v0.4.0
+    Finished bench [optimized] target(s) in 14.35s
+     Running unittests src/lib.rs (target/release/deps/curve25519_dalek-5b561f7d9e517de8)
+
+running 111 tests
+test backend::serial::fiat_u32::scalar::test::add ... ignored
+test backend::serial::fiat_u32::scalar::test::from_bytes_wide ... ignored
+test backend::serial::fiat_u32::scalar::test::montgomery_mul ... ignored
+test backend::serial::fiat_u32::scalar::test::montgomery_mul_max ... ignored
+test backend::serial::fiat_u32::scalar::test::montgomery_square_max ... ignored
+test backend::serial::fiat_u32::scalar::test::mul ... ignored
+test backend::serial::fiat_u32::scalar::test::mul_max ... ignored
+test backend::serial::fiat_u32::scalar::test::square_max ... ignored
+test backend::serial::fiat_u32::scalar::test::sub ... ignored
+test backend::serial::scalar_mul::pippenger::test::test_vartime_pippenger ... ignored
+test constants::test::test_eight_torsion ... ignored
+test constants::test::test_four_torsion ... ignored
+test constants::test::test_sqrt_ad_minus_one ... ignored
+test constants::test::test_sqrt_constants_sign ... ignored
+test constants::test::test_sqrt_minus_one ... ignored
+test constants::test::test_two_torsion ... ignored
+test edwards::test::basepoint16_vs_mul_by_pow_2_4 ... ignored
+test edwards::test::basepoint_decompression_compression ... ignored
+test edwards::test::basepoint_double_vs_basepoint2 ... ignored
+test edwards::test::basepoint_mult_by_basepoint_order ... ignored
+test edwards::test::basepoint_mult_one_vs_basepoint ... ignored
+test edwards::test::basepoint_mult_two_vs_basepoint2 ... ignored
+test edwards::test::basepoint_mult_vs_ed25519py ... ignored
+test edwards::test::basepoint_plus_basepoint_affine_niels_vs_basepoint2 ... ignored
+test edwards::test::basepoint_plus_basepoint_projective_niels_vs_basepoint2 ... ignored
+test edwards::test::basepoint_plus_basepoint_vs_basepoint2 ... ignored
+test edwards::test::basepoint_projective_extended_round_trip ... ignored
+test edwards::test::basepoint_table_basepoint_function_correct ... ignored
+test edwards::test::basepoint_tables ... ignored
+test edwards::test::basepoint_tables_unreduced_scalar ... ignored
+test edwards::test::compressed_identity ... ignored
+test edwards::test::conditional_assign_for_affine_niels_point ... ignored
+test edwards::test::decompression_sign_handling ... ignored
+test edwards::test::extended_point_equality_handles_scaling ... ignored
+test edwards::test::impl_sum ... ignored
+test edwards::test::is_identity ... ignored
+test edwards::test::is_small_order ... ignored
+test edwards::test::monte_carlo_overflow_underflow_debug_assert_test ... ignored
+test edwards::test::multiscalar_consistency_n_100 ... ignored
+test edwards::test::multiscalar_consistency_n_1000 ... ignored
+test edwards::test::multiscalar_consistency_n_250 ... ignored
+test edwards::test::multiscalar_consistency_n_500 ... ignored
+test edwards::test::scalar_mul_vs_ed25519py ... ignored
+test edwards::test::scalarmult_extended_point_works_both_ways ... ignored
+test edwards::test::test_precomputed_basepoint_mult ... ignored
+test edwards::test::to_affine_niels_clears_denominators ... ignored
+test edwards::test::vartime::double_scalar_mul_basepoint_vs_ed25519py ... ignored
+test edwards::test::vartime::multiscalar_mul_vartime_vs_consttime ... ignored
+test edwards::test::vartime::multiscalar_mul_vs_ed25519py ... ignored
+test edwards::test::vartime_precomputed_vs_nonprecomputed_multiscalar ... ignored
+test field::test::a_invert_vs_inverse_of_a_constant ... ignored
+test field::test::a_mul_a_vs_a_squared_constant ... ignored
+test field::test::a_p58_vs_ap58_constant ... ignored
+test field::test::a_square2_vs_a_squared_constant ... ignored
+test field::test::a_square_vs_a_squared_constant ... ignored
+test field::test::batch_invert_a_matches_nonbatched ... ignored
+test field::test::batch_invert_empty ... ignored
+test field::test::conditional_negate ... ignored
+test field::test::encoding_is_canonical ... ignored
+test field::test::equality ... ignored
+test field::test::from_bytes_highbit_is_ignored ... ignored
+test field::test::sqrt_ratio_behavior ... ignored
+test montgomery::test::basepoint_edwards_to_montgomery ... ignored
+test montgomery::test::basepoint_montgomery_to_edwards ... ignored
+test montgomery::test::eq_defined_mod_p ... ignored
+test montgomery::test::identity_in_different_coordinates ... ignored
+test montgomery::test::identity_in_different_models ... ignored
+test montgomery::test::montgomery_elligator_correct ... ignored
+test montgomery::test::montgomery_elligator_zero_zero ... ignored
+test montgomery::test::montgomery_ladder_matches_edwards_scalarmult ... ignored
+test montgomery::test::montgomery_to_edwards_rejects_twist ... ignored
+test ristretto::test::basepoint_roundtrip ... ignored
+test ristretto::test::compress_id ... ignored
+test ristretto::test::decompress_id ... ignored
+test ristretto::test::decompress_negative_s_fails ... ignored
+test ristretto::test::double_and_compress_1024_random_points ... ignored
+test ristretto::test::elligator_vs_ristretto_sage ... ignored
+test ristretto::test::encodings_of_small_multiples_of_basepoint ... ignored
+test ristretto::test::four_torsion_basepoint ... ignored
+test ristretto::test::four_torsion_random ... ignored
+test ristretto::test::impl_sum ... ignored
+test ristretto::test::one_way_map ... ignored
+test ristretto::test::random_roundtrip ... ignored
+test ristretto::test::scalarmult_ristrettopoint_works_both_ways ... ignored
+test ristretto::test::vartime_precomputed_vs_nonprecomputed_multiscalar ... ignored
+test scalar::test::add_reduces ... ignored
+test scalar::test::batch_invert_consistency ... ignored
+test scalar::test::batch_invert_empty ... ignored
+test scalar::test::canonical_decoding ... ignored
+test scalar::test::from_bytes_mod_order_wide ... ignored
+test scalar::test::from_u64 ... ignored
+test scalar::test::fuzzer_testcase_reduction ... ignored
+test scalar::test::impl_add ... ignored
+test scalar::test::impl_mul ... ignored
+test scalar::test::impl_product ... ignored
+test scalar::test::impl_sum ... ignored
+test scalar::test::invert ... ignored
+test scalar::test::montgomery_reduce_matches_from_bytes_mod_order_wide ... ignored
+test scalar::test::neg_twice_is_identity ... ignored
+test scalar::test::non_adjacent_form_random ... ignored
+test scalar::test::non_adjacent_form_test_vector ... ignored
+test scalar::test::quarkslab_scalar_overflow_does_not_occur ... ignored
+test scalar::test::reduce ... ignored
+test scalar::test::scalar_mul_by_one ... ignored
+test scalar::test::square ... ignored
+test scalar::test::sub_reduces ... ignored
+test scalar::test::test_pippenger_radix ... ignored
+test scalar::test::test_read_le_u64_into ... ignored
+test scalar::test::test_read_le_u64_into_should_panic_on_bad_input - should panic ... ignored
+test scalar::test::test_scalar_from_int ... ignored
+test scalar::test::to_bytes_from_bytes_roundtrips ... ignored
+
+test result: ok. 0 passed; 0 failed; 111 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/dalek_benchmarks.rs (target/release/deps/dalek_benchmarks-fd8407708515bf4d)
+Gnuplot not found, using plotters backend
+Benchmarking Scalar inversion
+Benchmarking Scalar inversion: Warming up for 3.0000 s
+Benchmarking Scalar inversion: Collecting 100 samples in estimated 5.0354 s (409k iterations)
+Benchmarking Scalar inversion: Analyzing
+Scalar inversion        time:   [12.134 µs 12.155 µs 12.178 µs]
+                        change: [+43.734% +44.112% +44.499%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 16 outliers among 100 measurements (16.00%)
+  1 (1.00%) low mild
+  15 (15.00%) high mild
+
+Benchmarking batch scalar inversion/Batch scalar inversion/1
+Benchmarking batch scalar inversion/Batch scalar inversion/1: Warming up for 3.0000 s
+Benchmarking batch scalar inversion/Batch scalar inversion/1: Collecting 100 samples in estimated 5.0382 s (399k iterations)
+Benchmarking batch scalar inversion/Batch scalar inversion/1: Analyzing
+batch scalar inversion/Batch scalar inversion/1
+                        time:   [12.641 µs 12.680 µs 12.724 µs]
+                        change: [+43.491% +43.920% +44.354%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+Benchmarking batch scalar inversion/Batch scalar inversion/2
+Benchmarking batch scalar inversion/Batch scalar inversion/2: Warming up for 3.0000 s
+Benchmarking batch scalar inversion/Batch scalar inversion/2: Collecting 100 samples in estimated 5.0446 s (389k iterations)
+Benchmarking batch scalar inversion/Batch scalar inversion/2: Analyzing
+batch scalar inversion/Batch scalar inversion/2
+                        time:   [12.785 µs 12.804 µs 12.827 µs]
+                        change: [+41.679% +42.140% +42.602%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+Benchmarking batch scalar inversion/Batch scalar inversion/4
+Benchmarking batch scalar inversion/Batch scalar inversion/4: Warming up for 3.0000 s
+Benchmarking batch scalar inversion/Batch scalar inversion/4: Collecting 100 samples in estimated 5.0082 s (379k iterations)
+Benchmarking batch scalar inversion/Batch scalar inversion/4: Analyzing
+batch scalar inversion/Batch scalar inversion/4
+                        time:   [13.222 µs 13.244 µs 13.267 µs]
+                        change: [+42.038% +42.404% +42.764%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+Benchmarking batch scalar inversion/Batch scalar inversion/8
+Benchmarking batch scalar inversion/Batch scalar inversion/8: Warming up for 3.0000 s
+Benchmarking batch scalar inversion/Batch scalar inversion/8: Collecting 100 samples in estimated 5.0422 s (354k iterations)
+Benchmarking batch scalar inversion/Batch scalar inversion/8: Analyzing
+batch scalar inversion/Batch scalar inversion/8
+                        time:   [14.153 µs 14.193 µs 14.237 µs]
+                        change: [+41.681% +42.091% +42.479%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking batch scalar inversion/Batch scalar inversion/16
+Benchmarking batch scalar inversion/Batch scalar inversion/16: Warming up for 3.0000 s
+Benchmarking batch scalar inversion/Batch scalar inversion/16: Collecting 100 samples in estimated 5.0475 s (318k iterations)
+Benchmarking batch scalar inversion/Batch scalar inversion/16: Analyzing
+batch scalar inversion/Batch scalar inversion/16
+                        time:   [15.748 µs 15.792 µs 15.839 µs]
+                        change: [+41.500% +41.837% +42.184%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 17 outliers among 100 measurements (17.00%)
+  7 (7.00%) low mild
+  4 (4.00%) high mild
+  6 (6.00%) high severe
+
+Benchmarking Montgomery pseudomultiplication
+Benchmarking Montgomery pseudomultiplication: Warming up for 3.0000 s
+Benchmarking Montgomery pseudomultiplication: Collecting 100 samples in estimated 5.4397 s (61k iterations)
+Benchmarking Montgomery pseudomultiplication: Analyzing
+Montgomery pseudomultiplication
+                        time:   [88.679 µs 88.841 µs 89.015 µs]
+                        change: [+108.02% +108.61% +109.21%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 17 outliers among 100 measurements (17.00%)
+  5 (5.00%) low mild
+  8 (8.00%) high mild
+  4 (4.00%) high severe
+
+Benchmarking RistrettoPoint compression
+Benchmarking RistrettoPoint compression: Warming up for 3.0000 s
+Benchmarking RistrettoPoint compression: Collecting 100 samples in estimated 5.0364 s (596k iterations)
+Benchmarking RistrettoPoint compression: Analyzing
+RistrettoPoint compression
+                        time:   [8.4556 µs 8.4690 µs 8.4851 µs]
+                        change: [+160.84% +161.38% +161.97%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 15 outliers among 100 measurements (15.00%)
+  2 (2.00%) low severe
+  3 (3.00%) low mild
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+
+Benchmarking RistrettoPoint decompression
+Benchmarking RistrettoPoint decompression: Warming up for 3.0000 s
+Benchmarking RistrettoPoint decompression: Collecting 100 samples in estimated 5.0384 s (596k iterations)
+Benchmarking RistrettoPoint decompression: Analyzing
+RistrettoPoint decompression
+                        time:   [8.4595 µs 8.4773 µs 8.4958 µs]
+                        change: [+150.65% +151.91% +153.07%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/1
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/1: Warming up for 3.0000 s
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/1: Collecting 100 samples in estimated 5.0417 s (596k iterations)
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/1: Analyzing
+double & compress batched/Batch Ristretto double-and-encode/1
+                        time:   [8.4745 µs 8.4892 µs 8.5042 µs]
+                        change: [+159.19% +159.67% +160.14%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 18 outliers among 100 measurements (18.00%)
+  4 (4.00%) low severe
+  5 (5.00%) low mild
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/2
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/2: Warming up for 3.0000 s
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/2: Collecting 100 samples in estimated 5.0326 s (540k iterations)
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/2: Analyzing
+double & compress batched/Batch Ristretto double-and-encode/2
+                        time:   [9.3446 µs 9.3546 µs 9.3642 µs]
+                        change: [+142.30% +144.38% +145.68%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/4
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/4: Warming up for 3.0000 s
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/4: Collecting 100 samples in estimated 5.0417 s (454k iterations)
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/4: Analyzing
+double & compress batched/Batch Ristretto double-and-encode/4
+                        time:   [11.102 µs 11.119 µs 11.136 µs]
+                        change: [+131.32% +131.97% +132.66%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/8
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/8: Warming up for 3.0000 s
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/8: Collecting 100 samples in estimated 5.0376 s (343k iterations)
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/8: Analyzing
+double & compress batched/Batch Ristretto double-and-encode/8
+                        time:   [14.648 µs 14.674 µs 14.702 µs]
+                        change: [+115.61% +116.04% +116.47%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 17 outliers among 100 measurements (17.00%)
+  1 (1.00%) low severe
+  11 (11.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/16
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/16: Warming up for 3.0000 s
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/16: Collecting 100 samples in estimated 5.0507 s (232k iterations)
+Benchmarking double & compress batched/Batch Ristretto double-and-encode/16: Analyzing
+double & compress batched/Batch Ristretto double-and-encode/16
+                        time:   [21.747 µs 21.771 µs 21.797 µs]
+                        change: [+100.55% +101.13% +101.70%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+
+Benchmarking EdwardsPoint compression
+Benchmarking EdwardsPoint compression: Warming up for 3.0000 s
+Benchmarking EdwardsPoint compression: Collecting 100 samples in estimated 5.0105 s (667k iterations)
+Benchmarking EdwardsPoint compression: Analyzing
+EdwardsPoint compression
+                        time:   [7.4386 µs 7.4500 µs 7.4609 µs]
+                        change: [+178.82% +179.36% +179.89%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+Benchmarking EdwardsPoint decompression
+Benchmarking EdwardsPoint decompression: Warming up for 3.0000 s
+Benchmarking EdwardsPoint decompression: Collecting 100 samples in estimated 5.0274 s (621k iterations)
+Benchmarking EdwardsPoint decompression: Analyzing
+EdwardsPoint decompression
+                        time:   [8.0597 µs 8.0749 µs 8.0923 µs]
+                        change: [+155.45% +157.34% +159.07%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking Constant-time fixed-base scalar mul
+Benchmarking Constant-time fixed-base scalar mul: Warming up for 3.0000 s
+Benchmarking Constant-time fixed-base scalar mul: Collecting 100 samples in estimated 5.0277 s (227k iterations)
+Benchmarking Constant-time fixed-base scalar mul: Analyzing
+Constant-time fixed-base scalar mul
+                        time:   [22.158 µs 22.196 µs 22.230 µs]
+                        change: [+105.68% +106.22% +106.74%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+
+Benchmarking Constant-time variable-base scalar mul
+Benchmarking Constant-time variable-base scalar mul: Warming up for 3.0000 s
+Benchmarking Constant-time variable-base scalar mul: Collecting 100 samples in estimated 5.0869 s (61k iterations)
+Benchmarking Constant-time variable-base scalar mul: Analyzing
+Constant-time variable-base scalar mul
+                        time:   [83.839 µs 83.933 µs 84.020 µs]
+                        change: [+107.12% +107.60% +108.10%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 16 outliers among 100 measurements (16.00%)
+  8 (8.00%) low mild
+  5 (5.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking Variable-time aA+bB, A variable, B fixed
+Benchmarking Variable-time aA+bB, A variable, B fixed: Warming up for 3.0000 s
+Benchmarking Variable-time aA+bB, A variable, B fixed: Collecting 100 samples in estimated 5.2162 s (66k iterations)
+Benchmarking Variable-time aA+bB, A variable, B fixed: Analyzing
+Variable-time aA+bB, A variable, B fixed
+                        time:   [78.911 µs 79.098 µs 79.345 µs]
+                        change: [+114.85% +115.44% +116.07%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1: Collecting 15 samples in estimated 5.0029 s (60k iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1
+                        time:   [82.512 µs 82.614 µs 82.688 µs]
+                        change: [+97.697% +98.401% +98.978%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/2
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/2: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/2: Collecting 15 samples in estimated 5.0059 s (46k iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/2: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/2
+                        time:   [107.24 µs 107.53 µs 107.76 µs]
+                        change: [+94.940% +95.986% +96.920%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/4
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/4: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/4: Collecting 15 samples in estimated 5.0068 s (32k iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/4: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/4
+                        time:   [157.08 µs 157.40 µs 157.64 µs]
+                        change: [+90.998% +91.775% +92.536%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/8
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/8: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/8: Collecting 15 samples in estimated 5.0233 s (19k iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/8: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/8
+                        time:   [257.02 µs 257.34 µs 257.69 µs]
+                        change: [+90.172% +91.064% +91.927%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/16
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/16: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/16: Collecting 15 samples in estimated 5.0187 s (11k iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/16: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/16
+                        time:   [456.69 µs 457.43 µs 457.99 µs]
+                        change: [+84.836% +85.965% +87.055%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/32
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/32: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/32: Collecting 15 samples in estimated 5.0800 s (5880 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/32: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/32
+                        time:   [856.43 µs 858.16 µs 859.25 µs]
+                        change: [+87.006% +87.899% +88.760%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/64
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/64: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/64: Collecting 15 samples in estimated 5.0024 s (3000 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/64: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/64
+                        time:   [1.6614 ms 1.6655 ms 1.6694 ms]
+                        change: [+88.806% +89.531% +90.154%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/128
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/128: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/128: Collecting 15 samples in estimated 5.1310 s (1560 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/128: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/128
+                        time:   [3.2717 ms 3.2747 ms 3.2778 ms]
+                        change: [+87.488% +88.250% +88.921%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/256
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/256: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/256: Collecting 15 samples in estimated 5.4972 s (840 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/256: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/256
+                        time:   [6.5263 ms 6.5349 ms 6.5404 ms]
+                        change: [+88.186% +88.819% +89.398%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/384
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/384: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/384: Collecting 15 samples in estimated 5.8894 s (600 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/384: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/384
+                        time:   [9.7483 ms 9.7541 ms 9.7636 ms]
+                        change: [+87.525% +88.321% +89.051%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/512
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/512: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/512: Collecting 15 samples in estimated 6.2658 s (480 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/512: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/512
+                        time:   [12.902 ms 12.930 ms 12.963 ms]
+                        change: [+86.531% +86.980% +87.411%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/768
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/768: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/768: Collecting 15 samples in estimated 7.0403 s (360 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/768: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/768
+                        time:   [19.419 ms 19.448 ms 19.473 ms]
+                        change: [+86.316% +86.990% +87.639%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1024
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1024: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1024: Collecting 15 samples in estimated 6.2675 s (240 iterations)
+Benchmarking Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1024: Analyzing
+Multiscalar multiplications/Constant-time variable-base multiscalar multiplication/1024
+                        time:   [25.817 ms 25.919 ms 26.009 ms]
+                        change: [+84.515% +85.365% +86.252%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1: Collecting 15 samples in estimated 5.0025 s (68k iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1
+                        time:   [73.382 µs 73.504 µs 73.609 µs]
+                        change: [+108.58% +110.31% +111.89%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/2
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/2: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/2: Collecting 15 samples in estimated 5.0073 s (56k iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/2: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/2
+                        time:   [88.420 µs 88.499 µs 88.563 µs]
+                        change: [+104.44% +105.53% +106.56%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/4
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/4: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/4: Collecting 15 samples in estimated 5.0023 s (42k iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/4: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/4
+                        time:   [119.47 µs 119.57 µs 119.70 µs]
+                        change: [+99.670% +100.73% +101.79%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/8
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/8: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/8: Collecting 15 samples in estimated 5.0011 s (27k iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/8: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/8
+                        time:   [182.73 µs 182.98 µs 183.30 µs]
+                        change: [+94.650% +96.420% +98.164%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/16
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/16: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/16: Collecting 15 samples in estimated 5.0348 s (16k iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/16: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/16
+                        time:   [310.67 µs 310.99 µs 311.55 µs]
+                        change: [+97.819% +99.090% +100.19%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) high mild
+  2 (13.33%) high severe
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/32
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/32: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/32: Collecting 15 samples in estimated 5.0562 s (8880 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/32: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/32
+                        time:   [562.38 µs 563.54 µs 564.63 µs]
+                        change: [+98.204% +98.821% +99.348%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  3 (20.00%) low mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/64
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/64: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/64: Collecting 15 samples in estimated 5.0915 s (4680 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/64: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/64
+                        time:   [1.0736 ms 1.0769 ms 1.0805 ms]
+                        change: [+95.199% +96.492% +97.702%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/128
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/128: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/128: Collecting 15 samples in estimated 5.0946 s (2400 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/128: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/128
+                        time:   [2.0893 ms 2.0946 ms 2.0983 ms]
+                        change: [+92.403% +93.229% +94.053%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) low mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/256
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/256: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/256: Collecting 15 samples in estimated 5.1968 s (1200 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/256: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/256
+                        time:   [4.2820 ms 4.2867 ms 4.2917 ms]
+                        change: [+109.62% +110.89% +112.10%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/384
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/384: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/384: Collecting 15 samples in estimated 5.0636 s (840 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/384: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/384
+                        time:   [5.9149 ms 5.9290 ms 5.9485 ms]
+                        change: [+109.28% +111.03% +112.49%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/512
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/512: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/512: Collecting 15 samples in estimated 5.3760 s (720 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/512: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/512
+                        time:   [7.4005 ms 7.4040 ms 7.4076 ms]
+                        change: [+102.23% +106.57% +109.83%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low severe
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/768
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/768: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/768: Collecting 15 samples in estimated 6.2387 s (600 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/768: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/768
+                        time:   [10.205 ms 10.237 ms 10.272 ms]
+                        change: [+107.75% +109.43% +110.90%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1024
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1024: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1024: Collecting 15 samples in estimated 6.3607 s (480 iterations)
+Benchmarking Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1024: Analyzing
+Multiscalar multiplications/Variable-time variable-base multiscalar multiplication/1024
+                        time:   [13.068 ms 13.100 ms 13.137 ms]
+                        change: [+112.57% +113.17% +113.74%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1: Collecting 15 samples in estimated 5.0081 s (72k iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1
+                        time:   [69.039 µs 69.139 µs 69.232 µs]
+                        change: [+111.42% +112.13% +112.85%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/2
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/2: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/2: Collecting 15 samples in estimated 5.0052 s (62k iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/2: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/2
+                        time:   [80.552 µs 80.606 µs 80.652 µs]
+                        change: [+106.18% +107.05% +107.91%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/4
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/4: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/4: Collecting 15 samples in estimated 5.0046 s (48k iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/4: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/4
+                        time:   [103.06 µs 103.24 µs 103.44 µs]
+                        change: [+102.58% +103.12% +103.73%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  2 (13.33%) high severe
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/8
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/8: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/8: Collecting 15 samples in estimated 5.0140 s (33k iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/8: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/8
+                        time:   [149.85 µs 150.23 µs 150.65 µs]
+                        change: [+96.998% +97.773% +98.538%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/16
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/16: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/16: Collecting 15 samples in estimated 5.0158 s (20k iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/16: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/16
+                        time:   [244.42 µs 244.70 µs 244.90 µs]
+                        change: [+96.815% +97.268% +97.723%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/32
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/32: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/32: Collecting 15 samples in estimated 5.0209 s (11k iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/32: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/32
+                        time:   [435.17 µs 435.83 µs 436.49 µs]
+                        change: [+96.671% +97.087% +97.517%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/64
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/64: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/64: Collecting 15 samples in estimated 5.0894 s (6120 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/64: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/64
+                        time:   [817.93 µs 820.64 µs 822.54 µs]
+                        change: [+93.268% +94.170% +95.080%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/128
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/128: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/128: Collecting 15 samples in estimated 5.0261 s (3120 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/128: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/128
+                        time:   [1.5836 ms 1.5847 ms 1.5856 ms]
+                        change: [+91.286% +92.062% +92.803%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/256
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/256: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/256: Collecting 15 samples in estimated 5.3284 s (1680 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/256: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/256
+                        time:   [3.1219 ms 3.1266 ms 3.1345 ms]
+                        change: [+86.060% +88.540% +90.663%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/384
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/384: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/384: Collecting 15 samples in estimated 5.1230 s (1080 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/384: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/384
+                        time:   [4.6700 ms 4.6747 ms 4.6776 ms]
+                        change: [+81.467% +84.535% +86.792%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) low mild
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/512
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/512: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/512: Collecting 15 samples in estimated 5.3251 s (840 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/512: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/512
+                        time:   [6.2464 ms 6.2541 ms 6.2619 ms]
+                        change: [+88.468% +89.287% +90.150%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/768
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/768: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/768: Collecting 15 samples in estimated 5.6799 s (600 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/768: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/768
+                        time:   [9.3365 ms 9.3571 ms 9.3836 ms]
+                        change: [+85.383% +86.650% +87.907%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1024
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1024: Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1024: Collecting 15 samples in estimated 6.1019 s (480 iterations)
+Benchmarking Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1024: Analyzing
+Multiscalar multiplications/Variable-time fixed-base multiscalar multiplication/1024
+                        time:   [12.488 ms 12.511 ms 12.528 ms]
+                        change: [+86.230% +87.353% +88.286%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  2 (13.33%) low mild
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (0pct dyn): Collecting 15 samples in estimated 5.0007 s (72k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 1), (0pct dyn)
+                        time:   [69.115 µs 69.203 µs 69.302 µs]
+                        change: [+111.29% +112.26% +113.12%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  2 (13.33%) low severe
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (0pct dyn): Collecting 15 samples in estimated 5.0060 s (62k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 2), (0pct dyn)
+                        time:   [80.760 µs 80.863 µs 80.946 µs]
+                        change: [+108.70% +109.20% +109.68%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) low mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (0pct dyn): Collecting 15 samples in estimated 5.0048 s (48k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 4), (0pct dyn)
+                        time:   [103.41 µs 103.51 µs 103.63 µs]
+                        change: [+99.837% +100.58% +101.38%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (0pct dyn): Collecting 15 samples in estimated 5.0007 s (33k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 8), (0pct dyn)
+                        time:   [150.03 µs 150.29 µs 150.78 µs]
+                        change: [+101.24% +101.99% +102.78%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) high mild
+  2 (13.33%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (0pct dyn): Collecting 15 samples in estimated 5.0233 s (20k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 16), (0pct dyn)
+                        time:   [244.99 µs 245.23 µs 245.53 µs]
+                        change: [+99.650% +100.29% +100.89%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (0pct dyn): Collecting 15 samples in estimated 5.0232 s (11k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 32), (0pct dyn)
+                        time:   [435.04 µs 435.77 µs 436.65 µs]
+                        change: [+91.987% +93.879% +95.588%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  2 (13.33%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (0pct dyn): Collecting 15 samples in estimated 5.0420 s (6120 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 64), (0pct dyn)
+                        time:   [815.06 µs 815.66 µs 816.20 µs]
+                        change: [+94.674% +96.522% +97.794%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) low severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (0pct dyn): Collecting 15 samples in estimated 5.0152 s (3120 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 128), (0pct dyn)
+                        time:   [1.5814 ms 1.5835 ms 1.5857 ms]
+                        change: [+96.110% +96.384% +96.697%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (0pct dyn): Collecting 15 samples in estimated 5.3151 s (1680 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 256), (0pct dyn)
+                        time:   [3.1335 ms 3.1510 ms 3.1733 ms]
+                        change: [+95.251% +96.872% +98.606%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (0pct dyn): Collecting 15 samples in estimated 5.1062 s (1080 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 384), (0pct dyn)
+                        time:   [4.6612 ms 4.6655 ms 4.6697 ms]
+                        change: [+88.028% +89.547% +91.049%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (0pct dyn): Collecting 15 samples in estimated 5.3289 s (840 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 512), (0pct dyn)
+                        time:   [6.2159 ms 6.2332 ms 6.2510 ms]
+                        change: [+90.818% +91.440% +92.048%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (0pct dyn): Collecting 15 samples in estimated 5.6684 s (600 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 768), (0pct dyn)
+                        time:   [9.3504 ms 9.3551 ms 9.3616 ms]
+                        change: [+90.517% +91.031% +91.517%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (0pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (0pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (0pct dyn): Collecting 15 samples in estimated 6.0433 s (480 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (0pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (0pct dyn)
+                        time:   [12.426 ms 12.455 ms 12.487 ms]
+                        change: [+90.833% +91.373% +91.919%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 4 outliers among 15 measurements (26.67%)
+  1 (6.67%) low severe
+  3 (20.00%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (20pct dyn): Collecting 15 samples in estimated 5.0068 s (72k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 1), (20pct dyn)
+                        time:   [68.711 µs 68.877 µs 69.086 µs]
+                        change: [+111.88% +112.52% +113.17%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (20pct dyn): Collecting 15 samples in estimated 5.0049 s (62k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 2), (20pct dyn)
+                        time:   [80.307 µs 80.452 µs 80.594 µs]
+                        change: [+108.88% +109.50% +110.15%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (20pct dyn): Collecting 15 samples in estimated 5.0063 s (48k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 4), (20pct dyn)
+                        time:   [103.32 µs 103.78 µs 104.46 µs]
+                        change: [+101.96% +103.45% +104.90%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (20pct dyn): Collecting 15 samples in estimated 5.0172 s (32k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 8), (20pct dyn)
+                        time:   [154.38 µs 154.75 µs 155.28 µs]
+                        change: [+95.444% +96.557% +97.669%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (20pct dyn): Collecting 15 samples in estimated 5.0152 s (19k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 16), (20pct dyn)
+                        time:   [257.81 µs 258.60 µs 259.61 µs]
+                        change: [+96.256% +97.601% +98.864%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (20pct dyn): Collecting 15 samples in estimated 5.0434 s (11k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 32), (20pct dyn)
+                        time:   [461.58 µs 462.20 µs 463.02 µs]
+                        change: [+97.885% +98.660% +99.401%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (20pct dyn): Collecting 15 samples in estimated 5.0820 s (5760 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 64), (20pct dyn)
+                        time:   [866.57 µs 868.74 µs 870.53 µs]
+                        change: [+91.415% +92.365% +93.419%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (20pct dyn): Collecting 15 samples in estimated 5.1358 s (3000 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 128), (20pct dyn)
+                        time:   [1.6871 ms 1.6893 ms 1.6907 ms]
+                        change: [+89.922% +92.055% +93.922%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (20pct dyn): Collecting 15 samples in estimated 5.2620 s (1560 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 256), (20pct dyn)
+                        time:   [3.3289 ms 3.3327 ms 3.3372 ms]
+                        change: [+92.169% +93.447% +94.542%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (20pct dyn): Collecting 15 samples in estimated 5.4460 s (1080 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 384), (20pct dyn)
+                        time:   [4.9768 ms 4.9851 ms 4.9981 ms]
+                        change: [+92.522% +93.322% +93.972%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (20pct dyn): Collecting 15 samples in estimated 5.6553 s (840 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 512), (20pct dyn)
+                        time:   [6.6533 ms 6.6601 ms 6.6688 ms]
+                        change: [+92.287% +92.764% +93.235%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (20pct dyn): Collecting 15 samples in estimated 6.0539 s (600 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 768), (20pct dyn)
+                        time:   [9.9434 ms 9.9522 ms 9.9598 ms]
+                        change: [+90.155% +90.606% +91.024%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (20pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (20pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (20pct dyn): Collecting 15 samples in estimated 6.4552 s (480 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (20pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (20pct dyn)
+                        time:   [13.277 ms 13.302 ms 13.337 ms]
+                        change: [+90.170% +90.790% +91.420%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (50pct dyn): Collecting 15 samples in estimated 5.0013 s (72k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 1), (50pct dyn)
+                        time:   [68.688 µs 68.827 µs 68.943 µs]
+                        change: [+110.44% +111.06% +111.61%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (50pct dyn): Collecting 15 samples in estimated 5.0057 s (59k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 2), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 2), (50pct dyn)
+                        time:   [84.595 µs 84.696 µs 84.802 µs]
+                        change: [+107.01% +107.60% +108.27%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low severe
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (50pct dyn): Collecting 15 samples in estimated 5.0082 s (45k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 4), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 4), (50pct dyn)
+                        time:   [111.06 µs 111.37 µs 111.66 µs]
+                        change: [+102.06% +102.54% +102.96%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (50pct dyn): Collecting 15 samples in estimated 5.0142 s (30k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 8), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 8), (50pct dyn)
+                        time:   [166.54 µs 166.84 µs 167.10 µs]
+                        change: [+100.11% +100.55% +100.95%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low severe
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (50pct dyn): Collecting 15 samples in estimated 5.0122 s (18k iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 16), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 16), (50pct dyn)
+                        time:   [278.38 µs 278.72 µs 278.92 µs]
+                        change: [+98.055% +98.695% +99.273%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  2 (13.33%) low severe
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (50pct dyn): Collecting 15 samples in estimated 5.0051 s (9840 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 32), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 32), (50pct dyn)
+                        time:   [502.22 µs 503.46 µs 505.03 µs]
+                        change: [+97.201% +97.587% +97.989%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (50pct dyn): Collecting 15 samples in estimated 5.0749 s (5280 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 64), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 64), (50pct dyn)
+                        time:   [949.87 µs 950.46 µs 951.42 µs]
+                        change: [+97.493% +97.798% +98.106%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (50pct dyn): Collecting 15 samples in estimated 5.1632 s (2760 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 128), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 128), (50pct dyn)
+                        time:   [1.8478 ms 1.8500 ms 1.8521 ms]
+                        change: [+95.691% +96.188% +96.662%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) low mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (50pct dyn): Collecting 15 samples in estimated 5.3271 s (1440 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 256), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 256), (50pct dyn)
+                        time:   [3.6462 ms 3.6543 ms 3.6617 ms]
+                        change: [+89.876% +91.328% +92.685%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (50pct dyn): Collecting 15 samples in estimated 5.3309 s (960 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 384), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 384), (50pct dyn)
+                        time:   [5.4843 ms 5.4883 ms 5.4925 ms]
+                        change: [+88.830% +90.417% +91.968%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low severe
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (50pct dyn): Collecting 15 samples in estimated 5.3050 s (720 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 512), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 512), (50pct dyn)
+                        time:   [7.2856 ms 7.2980 ms 7.3103 ms]
+                        change: [+90.025% +91.038% +92.010%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (50pct dyn): Collecting 15 samples in estimated 5.3151 s (480 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 768), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 768), (50pct dyn)
+                        time:   [10.903 ms 10.945 ms 10.977 ms]
+                        change: [+87.088% +89.163% +90.967%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 3 outliers among 15 measurements (20.00%)
+  2 (13.33%) low severe
+  1 (6.67%) high mild
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (50pct dyn)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (50pct dyn): Warming up for 3.0000 s
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (50pct dyn): Collecting 15 samples in estimated 5.3248 s (360 iterations)
+Benchmarking Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (50pct dyn): Analyzing
+Multiscalar multiplications/Variable-time mixed-base/(size: 1024), (50pct dyn)
+                        time:   [14.570 ms 14.587 ms 14.608 ms]
+                        change: [+86.351% +89.000% +91.172%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high severe
+
