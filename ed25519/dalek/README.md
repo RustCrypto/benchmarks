@@ -25,36 +25,44 @@ env RUSTFLAGS='-C target_feature=+avx2' cargo +nightly bench --features "simd_ba
 
 ## Linux
 
+Tear down/up
+
+In the to-be-tested crate directory
 ```
+rm -rf target
 rm -rf /tmp/ed25519-bench-results
 mkdir -p /tmp/ed25519-bench-results/u32-baseline
 mkdir -p /tmp/ed25519-bench-results/u64-delta-u32
 mkdir -p /tmp/ed25519-bench-results/fiat_u32-delta-u64
 mkdir -p /tmp/ed25519-bench-results/fiat_u64-delta-fiat_u32
 mkdir -p /tmp/ed25519-bench-results/avx2-delta-fiat_u64
-rm -rf target
 ```
 
-
+u32 Baseline
 ```sh
 env RUSTFLAGS='--cfg curve25519_dalek_bits="32"' cargo +nightly bench --features batch > ~/ed25519-dalek-bench-u32.txt 2>&1 ; \
 cp -R target/criterion/* /tmp/ed25519-bench-results/u32-baseline/ ; \
 ```
 
+u64 over u32 baseline
 ```sh
 cargo +nightly bench --features batch > ~/ed25519-dalek-bench-u64.txt 2>&1 ; \
 cp -R target/criterion/* /tmp/ed25519-bench-results/u64-delta-u32/ ; \
+```
 
+fiat_u32 over u64
 ```sh
 env RUSTFLAGS='--cfg curve25519_dalek_backend="fiat" --cfg curve25519_dalek_bits="32"' cargo +nightly bench --features batch > ~/ed25519-dalek-bench-fiat_u32.txt 2>&1 ; \
 cp -R target/criterion/* /tmp/ed25519-bench-results/fiat_u32-delta-u64/ ; \
 ```
 
+fiat_u64 over fiat_u32
 ```sh
 env RUSTFLAGS='--cfg curve25519_dalek_backend="fiat"' cargo +nightly bench --features batch > ~/ed25519-dalek-bench-fiat_u64.txt 2>&1 ; \
 cp -R target/criterion/* /tmp/ed25519-bench-results/fiat_u64-delta-fiat_u32/ ; \
 ```
 
+simd +avx2 over fiat_u64
 ```sh
 env RUSTFLAGS='-C target_feature=+avx2 --cfg curve25519_dalek_backend="simd"' cargo +nightly bench --features batch > ~/ed25519-dalek-bench-avx2.txt 2>&1
 cp -R target/criterion/* /tmp/ed25519-bench-results/avx2-delta-fiat_u64
