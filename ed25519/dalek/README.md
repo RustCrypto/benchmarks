@@ -14,7 +14,7 @@
 # 1.x Series
 
 | Report | Description   | Snapshots |
-| :---   | |:---         | :--- |
+| :---   | :---          | :--- |
 | avx2   | avx2 over u64 | nightly-x86_64-unknown-linux-gnu [2022-14-1858-000](1x-nightly-x86_64-unknown-linux-gnu-2022-14-1858-000) |
 
 [1x-nightly-x86_64-unknown-linux-gnu-2022-14-1858-000]: 1.x/nightly-x86_64-unknown-linux-gnu/2022-14-1858-000/criterion/report/index.html
@@ -29,7 +29,7 @@ env RUSTFLAGS='-C target_feature=+avx2' cargo +nightly bench --features "simd_ba
 # 2.x Series
 
 | Report   | Description        | Snapshots                             |
-| :---     | |:---              | :---                                  |
+| :---     | :---               | :---                                  |
 | u32      | Default serial u32 | nightly-x86_64-unknown-linux-gnu [2022-14-1858-000](2x-nightly-x86_64-unknown-linux-gnu-2022-14-1858-000-u32) |
 | u64      | Default serial u64 | nightly-x86_64-unknown-linux-gnu [2022-14-1858-000](2x-nightly-x86_64-unknown-linux-gnu-2022-14-1858-000-u64) |
 | fiat_u32 | With fiat u32      | nightly-x86_64-unknown-linux-gnu [2022-14-1858-000](2x-nightly-x86_64-unknown-linux-gnu-2022-14-1858-000-fiat_u32) |
