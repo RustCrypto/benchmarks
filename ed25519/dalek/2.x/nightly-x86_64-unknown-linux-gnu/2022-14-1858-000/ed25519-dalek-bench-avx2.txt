@@ -1,0 +1,194 @@
+   Compiling syn v1.0.105
+   Compiling libm v0.1.4
+   Compiling num-traits v0.2.15
+   Compiling itertools v0.10.5
+   Compiling digest v0.10.6
+   Compiling half v1.8.2
+   Compiling regex-syntax v0.6.28
+   Compiling rayon-core v1.10.1
+   Compiling walkdir v2.3.2
+   Compiling clap v2.34.0
+   Compiling rand v0.8.5
+   Compiling oorandom v11.1.3
+   Compiling hex v0.4.3
+   Compiling hex-literal v0.3.4
+   Compiling sha2 v0.10.6
+   Compiling rayon v1.6.1
+   Compiling packed_simd_2 v0.3.8
+   Compiling regex v1.7.0
+   Compiling plotters v0.3.4
+   Compiling criterion-plot v0.4.5
+   Compiling synstructure v0.12.6
+   Compiling serde_derive v1.0.150
+   Compiling zeroize_derive v1.3.3
+   Compiling zeroize v1.5.7
+   Compiling der v0.6.1
+   Compiling merlin v3.0.0
+   Compiling spki v0.6.0
+   Compiling pkcs8 v0.9.0
+   Compiling ed25519 v2.0.0-pre.1
+   Compiling serde v1.0.150
+   Compiling bstr v0.2.17
+   Compiling serde_json v1.0.89
+   Compiling serde_cbor v0.11.2
+   Compiling bincode v1.3.3
+   Compiling toml v0.5.10
+   Compiling csv v1.1.6
+   Compiling tinytemplate v1.2.1
+   Compiling curve25519-dalek v4.0.0-pre.3
+   Compiling criterion v0.3.6
+   Compiling ed25519-dalek v1.0.1 (/home/foobar/cc/t/ed25519-dalek)
+    Finished bench [optimized] target(s) in 13.36s
+     Running unittests src/lib.rs (target/release/deps/ed25519_dalek-3e655843646691c7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/ed25519_benchmarks.rs (target/release/deps/ed25519_benchmarks-c4d72e0e1c7edcc8)
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking Ed25519 signing
+Benchmarking Ed25519 signing: Warming up for 3.0000 s
+Benchmarking Ed25519 signing: Collecting 100 samples in estimated 5.0468 s (364k iterations)
+Benchmarking Ed25519 signing: Analyzing
+Ed25519 signing         time:   [13.737 µs 13.757 µs 13.776 µs]
+                        change: [-12.287% -12.106% -11.921%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 16 outliers among 100 measurements (16.00%)
+  6 (6.00%) low mild
+  7 (7.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking Ed25519 signature verification
+Benchmarking Ed25519 signature verification: Warming up for 3.0000 s
+Benchmarking Ed25519 signature verification: Collecting 100 samples in estimated 5.0630 s (212k iterations)
+Benchmarking Ed25519 signature verification: Analyzing
+Ed25519 signature verification
+                        time:   [23.810 µs 23.843 µs 23.878 µs]
+                        change: [-43.052% -42.905% -42.761%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 14 outliers among 100 measurements (14.00%)
+  2 (2.00%) low mild
+  5 (5.00%) high mild
+  7 (7.00%) high severe
+
+Benchmarking Ed25519 strict signature verification
+Benchmarking Ed25519 strict signature verification: Warming up for 3.0000 s
+Benchmarking Ed25519 strict signature verification: Collecting 100 samples in estimated 5.1163 s (202k iterations)
+Benchmarking Ed25519 strict signature verification: Analyzing
+Ed25519 strict signature verification
+                        time:   [25.311 µs 25.364 µs 25.439 µs]
+                        change: [-41.051% -40.946% -40.831%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking Ed25519 batch signature verification/4
+Benchmarking Ed25519 batch signature verification/4: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/4: Collecting 100 samples in estimated 5.2979 s (71k iterations)
+Benchmarking Ed25519 batch signature verification/4: Analyzing
+Ed25519 batch signature verification/4
+                        time:   [74.539 µs 74.679 µs 74.826 µs]
+                        change: [-35.982% -35.888% -35.776%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 8 outliers among 100 measurements (8.00%)
+  7 (7.00%) high mild
+  1 (1.00%) high severe
+Benchmarking Ed25519 batch signature verification/8
+Benchmarking Ed25519 batch signature verification/8: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/8: Collecting 100 samples in estimated 5.1794 s (40k iterations)
+Benchmarking Ed25519 batch signature verification/8: Analyzing
+Ed25519 batch signature verification/8
+                        time:   [126.59 µs 126.85 µs 127.15 µs]
+                        change: [-35.803% -35.226% -34.797%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 11 outliers among 100 measurements (11.00%)
+  4 (4.00%) low mild
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+Benchmarking Ed25519 batch signature verification/16
+Benchmarking Ed25519 batch signature verification/16: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/16: Collecting 100 samples in estimated 5.8627 s (25k iterations)
+Benchmarking Ed25519 batch signature verification/16: Analyzing
+Ed25519 batch signature verification/16
+                        time:   [231.32 µs 231.83 µs 232.44 µs]
+                        change: [-33.700% -33.539% -33.333%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+Benchmarking Ed25519 batch signature verification/32
+Benchmarking Ed25519 batch signature verification/32: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/32: Collecting 100 samples in estimated 6.6494 s (15k iterations)
+Benchmarking Ed25519 batch signature verification/32: Analyzing
+Ed25519 batch signature verification/32
+                        time:   [446.64 µs 449.32 µs 452.23 µs]
+                        change: [-32.653% -32.342% -31.974%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+Benchmarking Ed25519 batch signature verification/64
+Benchmarking Ed25519 batch signature verification/64: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/64: Collecting 100 samples in estimated 8.8358 s (10k iterations)
+Benchmarking Ed25519 batch signature verification/64: Analyzing
+Ed25519 batch signature verification/64
+                        time:   [865.02 µs 868.05 µs 872.05 µs]
+                        change: [-32.577% -32.323% -32.002%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+Benchmarking Ed25519 batch signature verification/96
+Benchmarking Ed25519 batch signature verification/96: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.3s, enable flat sampling, or reduce sample count to 60.
+Benchmarking Ed25519 batch signature verification/96: Collecting 100 samples in estimated 6.2669 s (5050 iterations)
+Benchmarking Ed25519 batch signature verification/96: Analyzing
+Ed25519 batch signature verification/96
+                        time:   [1.2316 ms 1.2368 ms 1.2437 ms]
+                        change: [-38.381% -38.096% -37.684%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+Benchmarking Ed25519 batch signature verification/128
+Benchmarking Ed25519 batch signature verification/128: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.9s, enable flat sampling, or reduce sample count to 50.
+Benchmarking Ed25519 batch signature verification/128: Collecting 100 samples in estimated 7.9331 s (5050 iterations)
+Benchmarking Ed25519 batch signature verification/128: Analyzing
+Ed25519 batch signature verification/128
+                        time:   [1.5595 ms 1.5621 ms 1.5651 ms]
+                        change: [-37.677% -37.545% -37.400%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+Benchmarking Ed25519 batch signature verification/256
+Benchmarking Ed25519 batch signature verification/256: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/256: Collecting 100 samples in estimated 5.1991 s (1800 iterations)
+Benchmarking Ed25519 batch signature verification/256: Analyzing
+Ed25519 batch signature verification/256
+                        time:   [2.8669 ms 2.8724 ms 2.8783 ms]
+                        change: [-36.540% -36.414% -36.277%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking Ed25519 keypair generation
+Benchmarking Ed25519 keypair generation: Warming up for 3.0000 s
+Benchmarking Ed25519 keypair generation: Collecting 100 samples in estimated 5.0473 s (384k iterations)
+Benchmarking Ed25519 keypair generation: Analyzing
+Ed25519 keypair generation
+                        time:   [13.005 µs 13.023 µs 13.044 µs]
+                        change: [-13.178% -12.984% -12.780%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 8 outliers among 100 measurements (8.00%)
+  6 (6.00%) high mild
+  2 (2.00%) high severe
+

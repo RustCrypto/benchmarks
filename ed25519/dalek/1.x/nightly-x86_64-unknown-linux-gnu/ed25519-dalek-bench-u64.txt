@@ -1,0 +1,237 @@
+   Compiling proc-macro2 v1.0.47
+   Compiling quote v1.0.21
+   Compiling unicode-ident v1.0.5
+   Compiling syn v1.0.105
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.138
+   Compiling autocfg v1.1.0
+   Compiling serde_derive v1.0.150
+   Compiling serde v1.0.150
+   Compiling getrandom v0.1.16
+   Compiling version_check v0.9.4
+   Compiling typenum v1.16.0
+   Compiling crossbeam-utils v0.8.14
+   Compiling memchr v2.5.0
+   Compiling unicode-xid v0.2.4
+   Compiling scopeguard v1.1.0
+   Compiling either v1.8.0
+   Compiling rayon-core v1.10.1
+   Compiling serde_json v1.0.89
+   Compiling ryu v1.0.11
+   Compiling ppv-lite86 v0.2.17
+   Compiling itoa v1.0.4
+   Compiling regex-automata v0.1.10
+   Compiling generic-array v0.14.6
+   Compiling byteorder v1.4.3
+   Compiling memoffset v0.7.1
+   Compiling crossbeam-epoch v0.9.13
+   Compiling num-traits v0.2.15
+   Compiling lazy_static v1.4.0
+   Compiling plotters-backend v0.3.4
+   Compiling unicode-width v0.1.10
+   Compiling itertools v0.10.5
+   Compiling half v1.8.2
+   Compiling textwrap v0.11.0
+   Compiling keccak v0.1.3
+   Compiling regex-syntax v0.6.28
+   Compiling bitflags v1.3.2
+   Compiling cpufeatures v0.2.5
+   Compiling crossbeam-channel v0.5.6
+   Compiling csv-core v0.1.10
+   Compiling plotters-svg v0.3.3
+   Compiling num_cpus v1.14.0
+   Compiling crossbeam-deque v0.8.2
+   Compiling cast v0.3.0
+   Compiling opaque-debug v0.3.0
+   Compiling itoa v0.4.8
+   Compiling signature v1.6.4
+   Compiling rand_core v0.5.1
+   Compiling same-file v1.0.6
+   Compiling subtle v2.4.1
+   Compiling ed25519 v1.5.2
+   Compiling atty v0.2.14
+   Compiling walkdir v2.3.2
+   Compiling rand_chacha v0.2.2
+   Compiling regex v1.7.0
+   Compiling clap v2.34.0
+   Compiling oorandom v11.1.3
+   Compiling digest v0.9.0
+   Compiling block-buffer v0.9.0
+   Compiling hex v0.4.3
+   Compiling rand v0.7.3
+   Compiling sha2 v0.9.9
+   Compiling rayon v1.6.1
+   Compiling criterion-plot v0.4.5
+   Compiling plotters v0.3.4
+   Compiling synstructure v0.12.6
+   Compiling zeroize_derive v1.3.3
+   Compiling zeroize v1.3.0
+   Compiling merlin v2.0.1
+   Compiling curve25519-dalek v3.2.1
+   Compiling bstr v0.2.17
+   Compiling serde_cbor v0.11.2
+   Compiling bincode v1.3.3
+   Compiling toml v0.5.10
+   Compiling ed25519-dalek v1.0.1 (/home/foobar/cc/t/ed25519-dalek)
+warning: associated function `to_bytes` is never used
+   --> src/secret.rs:328:12
+    |
+328 |     pub fn to_bytes(&self) -> [u8; EXPANDED_SECRET_KEY_LENGTH] {
+    |            ^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+
+warning: associated function `from_bytes` is never used
+   --> src/secret.rs:378:19
+    |
+378 |     pub(crate) fn from_bytes(bytes: &[u8]) -> Result<ExpandedSecretKey, SignatureError> {
+    |                   ^^^^^^^^^^
+
+warning: `ed25519-dalek` (lib) generated 2 warnings
+   Compiling csv v1.1.6
+   Compiling tinytemplate v1.2.1
+   Compiling criterion v0.3.6
+warning: use of deprecated associated function `criterion::Criterion::<M>::bench_function_over_inputs`: Please use BenchmarkGroups instead.
+  --> benches/ed25519_benchmarks.rs:60:11
+   |
+60 |         c.bench_function_over_inputs(
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: `ed25519-dalek` (lib test) generated 2 warnings (2 duplicates)
+warning: `ed25519-dalek` (bench "ed25519_benchmarks") generated 1 warning
+    Finished bench [optimized] target(s) in 14.15s
+     Running unittests src/lib.rs (target/release/deps/ed25519_dalek-f977e7a56f1a789b)
+
+running 2 tests
+test secret::test::pubkey_from_secret_and_expanded_secret ... ignored
+test secret::test::secret_key_zeroize_on_drop ... ignored
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/ed25519_benchmarks.rs (target/release/deps/ed25519_benchmarks-9ae9d6da4bb175db)
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking Ed25519 signing
+Benchmarking Ed25519 signing: Warming up for 3.0000 s
+Benchmarking Ed25519 signing: Collecting 100 samples in estimated 5.0259 s (343k iterations)
+Benchmarking Ed25519 signing: Analyzing
+Ed25519 signing         time:   [14.773 µs 14.803 µs 14.830 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+
+Benchmarking Ed25519 signature verification
+Benchmarking Ed25519 signature verification: Warming up for 3.0000 s
+Benchmarking Ed25519 signature verification: Collecting 100 samples in estimated 5.0858 s (126k iterations)
+Benchmarking Ed25519 signature verification: Analyzing
+Ed25519 signature verification
+                        time:   [41.281 µs 42.098 µs 43.017 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) high mild
+  8 (8.00%) high severe
+
+Benchmarking Ed25519 strict signature verification
+Benchmarking Ed25519 strict signature verification: Warming up for 3.0000 s
+Benchmarking Ed25519 strict signature verification: Collecting 100 samples in estimated 5.1683 s (126k iterations)
+Benchmarking Ed25519 strict signature verification: Analyzing
+Ed25519 strict signature verification
+                        time:   [40.819 µs 40.924 µs 41.083 µs]
+Found 17 outliers among 100 measurements (17.00%)
+  15 (15.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking Ed25519 batch signature verification/4
+Benchmarking Ed25519 batch signature verification/4: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/4: Collecting 100 samples in estimated 5.5234 s (50k iterations)
+Benchmarking Ed25519 batch signature verification/4: Analyzing
+Ed25519 batch signature verification/4
+                        time:   [108.50 µs 108.67 µs 108.86 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  3 (3.00%) low mild
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+Benchmarking Ed25519 batch signature verification/8
+Benchmarking Ed25519 batch signature verification/8: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/8: Collecting 100 samples in estimated 5.4581 s (30k iterations)
+Benchmarking Ed25519 batch signature verification/8: Analyzing
+Ed25519 batch signature verification/8
+                        time:   [179.48 µs 179.80 µs 180.15 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+Benchmarking Ed25519 batch signature verification/16
+Benchmarking Ed25519 batch signature verification/16: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/16: Collecting 100 samples in estimated 6.5180 s (20k iterations)
+Benchmarking Ed25519 batch signature verification/16: Analyzing
+Ed25519 batch signature verification/16
+                        time:   [323.16 µs 323.57 µs 324.05 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) high mild
+  6 (6.00%) high severe
+Benchmarking Ed25519 batch signature verification/32
+Benchmarking Ed25519 batch signature verification/32: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/32: Collecting 100 samples in estimated 6.1621 s (10k iterations)
+Benchmarking Ed25519 batch signature verification/32: Analyzing
+Ed25519 batch signature verification/32
+                        time:   [609.39 µs 610.11 µs 610.94 µs]
+Found 13 outliers among 100 measurements (13.00%)
+  2 (2.00%) low mild
+  6 (6.00%) high mild
+  5 (5.00%) high severe
+Benchmarking Ed25519 batch signature verification/64
+Benchmarking Ed25519 batch signature verification/64: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.0s, enable flat sampling, or reduce sample count to 60.
+Benchmarking Ed25519 batch signature verification/64: Collecting 100 samples in estimated 6.0342 s (5050 iterations)
+Benchmarking Ed25519 batch signature verification/64: Analyzing
+Ed25519 batch signature verification/64
+                        time:   [1.1925 ms 1.1943 ms 1.1962 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+Benchmarking Ed25519 batch signature verification/96
+Benchmarking Ed25519 batch signature verification/96: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 9.3s, enable flat sampling, or reduce sample count to 50.
+Benchmarking Ed25519 batch signature verification/96: Collecting 100 samples in estimated 9.3068 s (5050 iterations)
+Benchmarking Ed25519 batch signature verification/96: Analyzing
+Ed25519 batch signature verification/96
+                        time:   [1.8391 ms 1.8406 ms 1.8423 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low mild
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+Benchmarking Ed25519 batch signature verification/128
+Benchmarking Ed25519 batch signature verification/128: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/128: Collecting 100 samples in estimated 5.0441 s (2200 iterations)
+Benchmarking Ed25519 batch signature verification/128: Analyzing
+Ed25519 batch signature verification/128
+                        time:   [2.2946 ms 2.2981 ms 2.3030 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+Benchmarking Ed25519 batch signature verification/256
+Benchmarking Ed25519 batch signature verification/256: Warming up for 3.0000 s
+Benchmarking Ed25519 batch signature verification/256: Collecting 100 samples in estimated 5.3856 s (1300 iterations)
+Benchmarking Ed25519 batch signature verification/256: Analyzing
+Ed25519 batch signature verification/256
+                        time:   [4.1402 ms 4.1436 ms 4.1472 ms]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  8 (8.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking Ed25519 keypair generation
+Benchmarking Ed25519 keypair generation: Warming up for 3.0000 s
+Benchmarking Ed25519 keypair generation: Collecting 100 samples in estimated 5.0566 s (364k iterations)
+Benchmarking Ed25519 keypair generation: Analyzing
+Ed25519 keypair generation
+                        time:   [13.838 µs 13.850 µs 13.866 µs]
+Found 10 outliers among 100 measurements (10.00%)
+  7 (7.00%) high mild
+  3 (3.00%) high severe
+
